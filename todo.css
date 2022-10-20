@@ -1,0 +1,144 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #264653, #2a9d8f), no-repeat;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.title {
+  font-size: 4rem;
+  margin: 2rem 1rem;
+  color: aliceblue;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+}
+
+.input-add input {
+  min-width: 200px;
+  padding: 5px;
+  font-size: 1.5rem;
+  border: none;
+  background-color: aliceblue;
+}
+
+.input-add {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+}
+
+.input-add button {
+  border: none;
+  background-color: whitesmoke;
+  width: 45px;
+  background-color: aliceblue;
+  color: #264653;
+  height: 100%;
+  outline: none;
+  cursor: pointer;
+  height: 53px;
+  transition: all 0.3s ease;
+}
+
+.input-add button:hover {
+  color: aliceblue;
+  background-color: #264653;
+}
+
+.input-add button i {
+  pointer-events: none;
+  font-size: 2.1rem;
+}
+
+.sort-out {
+  margin-left: 20px;
+}
+
+.sort-out select {
+  color: #264653;
+  height: 53px;
+  padding: 2px 5px;
+  font-size: 1.4rem;
+}
+
+.task-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  min-height: 40px;
+}
+
+.output-text {
+  min-width: 200px;
+  font-size: 20px;
+  padding: 5px;
+  background-color: aliceblue;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+}
+
+.wholeTasks {
+  min-width: 300px;
+}
+
+.buttons {
+  font-size: 1rem;
+}
+
+.bt {
+  font-size: 30px;
+  padding: 2px;
+}
+
+.delete,
+.tick {
+  background-color: #264653;
+  color: aliceblue;
+  border: none;
+  transition: all 0.5s ease;
+}
+
+.tick {
+  padding-left: 5px;
+}
+
+.delete {
+  padding-right: 10px;
+}
+
+.hoverdel:hover {
+  color: #f25c54;
+  cursor: pointer;
+}
+
+.hoveradd:hover {
+  color: #2a9d8f;
+  cursor: pointer;
+}
+
+.fall {
+  transform: translateY(10rem) rotateZ(20deg);
+  opacity: 0;
+  border: 2px solid red;
+}
